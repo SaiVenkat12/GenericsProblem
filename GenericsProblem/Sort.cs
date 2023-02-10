@@ -17,6 +17,12 @@ namespace GenericsProblem
         public static T FindMaxList(List<T> list)
         {
             list.Sort();
+            Console.WriteLine("Sorted Values :");
+            foreach(T items in list)
+            {
+                Console.Write(" "+items);
+            }
+            Console.WriteLine("\nMax Value : ");
             return list.Last();
         }
     }

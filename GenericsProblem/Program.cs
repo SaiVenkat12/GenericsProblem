@@ -14,7 +14,7 @@ namespace GenericsProblem
             Console.WriteLine("Max Value");
             List<int> listNo = new List<int> { 90, 1, 56, 88, 4, 23, 7 };
             List<float> listfloat = new List<float> { 22,3.3f,12.9f,99.234f,1,67.85f};
-            List<string> listString = new List<string> { "apple", "banana", "xray", "peach", "WaterMelon" };
+            List<string> listString = new List<string> { "orange", "pineApple", "apple", "banana", "Xray", "peach", "WaterMelon" };
             
             bool flag = true;
             while (flag)
@@ -39,13 +39,13 @@ namespace GenericsProblem
                         Console.WriteLine("The Greatest Value is {0}", FindMax<string>.FindMaxValue("Xray", "Banana", "Peach"));
                         break;
                     case 4:
-                        Console.WriteLine("Maximum Value = " + Sort<int>.FindMaxList(listNo));
+                        Console.WriteLine( Sort<int>.FindMaxList(listNo));
                         break;
                     case 5:
-                        Console.WriteLine("Maximum Value = " + Sort<float>.FindMaxList(listfloat));
+                        Console.WriteLine(Sort<float>.FindMaxList(listfloat));
                         break;
                     case 6:
-                        Console.WriteLine("Maximum Value = " + Sort<string>.FindMaxList(listString));
+                        Console.WriteLine(Sort<string>.FindMaxList(listString));
                         break;                                      
                     case 22:
                         flag = false;
