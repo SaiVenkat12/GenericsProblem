@@ -16,7 +16,7 @@ namespace GenericsProblem
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("1.Find Max Number \n2.Find Max Float \n22.Exit");
+                Console.WriteLine("1.Find Max Number \n2.Find Max Float \n3.Find Max String \n22.Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -30,6 +30,18 @@ namespace GenericsProblem
                         Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxFloat(12, 90, 15.3f));
                         Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxFloat(12, 14, 25.1f));
                         break;
+                    case 3:
+                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxString("Apple", "Peach", "Banana"));
+                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxString("Apple", "Banana", "WaterMelon"));
+                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxString("Xray", "Banana", "Peach"));
+                        break;
+                    case 22:
+                        flag= false;
+                        break;
+                    default:
+                        Console.WriteLine("Enter the Correct Number !");
+                        break;
+
                 }
             }
                         
