@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GenericsProblem
 {
-    internal class FindMax
+    internal class FindMax 
     {
-        public int FindMaxNumber(int first,int second,int third)
+        public T FindMaxValue<T>(T first, T second, T third) where T : IComparable
         {
             
             if(first.CompareTo(second)>0 && first.CompareTo(third)>0)
@@ -25,39 +25,6 @@ namespace GenericsProblem
             }
             throw new Exception("2 or 3 Values are Equal");
         }
-        public float FindMaxFloat(float first, float second, float third)
-        {
-
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
-            {
-                return first;
-            }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
-            {
-                return second;
-            }
-            else if (third.CompareTo(second) > 0 && third.CompareTo(first) > 0)
-            {
-                return third;
-            }
-            throw new Exception("2 or 3 Values are Equal");
-        }
-        public string FindMaxString(string first, string second, string third)
-        {
-
-            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
-            {
-                return first;
-            }
-            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
-            {
-                return second;
-            }
-            else if (third.CompareTo(second) > 0 && third.CompareTo(first) > 0)
-            {
-                return third;
-            }
-            throw new Exception("2 or 3 Values are Equal");
-        }
+        
     }
 }
