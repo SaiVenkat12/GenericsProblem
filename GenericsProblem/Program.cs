@@ -12,7 +12,6 @@ namespace GenericsProblem
         {
             Console.WriteLine("Generics Problem");
             Console.WriteLine("Max Value");
-            FindMax maxValue= new FindMax();
             bool flag = true;
             while (flag)
             {
@@ -21,19 +20,19 @@ namespace GenericsProblem
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("The Greatest Number is {0}", maxValue.FindMaxValue(21, 14, 15));
-                        Console.WriteLine("The Greatest Number is {0}", maxValue.FindMaxValue(12, 90, 15));
-                        Console.WriteLine("The Greatest Number is {0}", maxValue.FindMaxValue(12, 14, 25));
+                        Console.WriteLine("The Greatest Number is {0}", FindMax<int>.FindMaxValue(21, 14, 15));
+                        Console.WriteLine("The Greatest Number is {0}", FindMax<int>.FindMaxValue(12, 90, 15));
+                        Console.WriteLine("The Greatest Number is {0}", FindMax<int>.FindMaxValue(12, 14, 25));
                         break;
                     case 2:
-                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxValue(21.5f, 14.9f, 15));
-                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxValue(12, 90, 15.3f));
-                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxValue(12, 14, 25.1f));
+                        Console.WriteLine("The Greatest Value is {0}", FindMax<float>.FindMaxValue(21.5f, 14.9f, 15));
+                        Console.WriteLine("The Greatest Value is {0}", FindMax<float>.FindMaxValue(12, 90, 15.3f));
+                        Console.WriteLine("The Greatest Value is {0}", FindMax<float>.FindMaxValue(12, 14, 25.1f));
                         break;
                     case 3:
-                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxValue("Apple", "Peach", "Banana"));
-                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxValue("Apple", "Banana", "WaterMelon"));
-                        Console.WriteLine("The Greatest Value is {0}", maxValue.FindMaxValue("Xray", "Banana", "Peach"));
+                        Console.WriteLine("The Greatest Value is {0}", FindMax<string>.FindMaxValue("Apple", "Peach", "Banana"));
+                        Console.WriteLine("The Greatest Value is {0}", FindMax<string>.FindMaxValue("Apple", "Banana", "WaterMelon"));
+                        Console.WriteLine("The Greatest Value is {0}", FindMax<string>.FindMaxValue("Xray", "Banana", "Peach"));
                         break;
                     case 22:
                         flag= false;
